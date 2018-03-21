@@ -3,6 +3,7 @@
   "assetGroups": [{
     "name": "app",
     "installMode": "prefetch",
+    "updateMode": "prefetch",
     "resources": {
       "files": [
         "/favicon.ico",
@@ -22,6 +23,16 @@
       "files": [
         "/assets/**"
       ]
+    }
+  }],
+  "dataGroups": [{
+    "name": "post-api",
+    "urls": ["/posts"],
+    "cacheConfig": {
+      "maxSize": 100,
+      "maxAge": "10s",
+      "timeout": "5s",
+      "strategy": "freshness"
     }
   }]
 }

@@ -9,12 +9,16 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './auth.guard';
+import { PostsComponent } from './posts/posts.component';
+import { TopNavigationComponent } from './shared/top-navigation/top-navigation.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    PostsComponent,
+    TopNavigationComponent
   ],
   imports: [
     BrowserModule,

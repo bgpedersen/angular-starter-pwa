@@ -1,12 +1,12 @@
 # Angular PWA Starter
 Angular 5 PWA (progressive web app) starter application wready to use with best practice structure and often used libraries.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
-
 ## Server and API
 This project is built with Angular's Service-Worker:
--Service-Workers only work in a production build, so to test, use 'ng build --prod'
--The application uses the worker for caching of both files/assets and api data. Therefore 'json-server' can be used to setup an simple api on 'localhost:3000'.
+-Service-Workers only work in a production build, so to test, use 'ng build --prod' and run a server
+-IMPORTANT! To be able to hit refresh when running the webserver in the dist folder (ex.: live-server), run with cmd 'live-server --entry-file=index.html'
+-The application uses the worker for caching of both files/assets and api data. Therefore 'json-server' can be used to setup an simple api on 'localhost:3000'
+-When running the webserver, navigation to 'http://127.0.0.1:8080/ngsw/state' will show debug state of the Service-Worker.
 
 ## Structure
 * Core module setup for global models, services etc.
@@ -47,3 +47,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.

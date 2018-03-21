@@ -1,0 +1,11 @@
+<app-top-navigation></app-top-navigation>
+
+<h1>Posts</h1>
+
+<ul>
+  <li *ngFor="let item of posts">
+    <div style="border-bottom: 1px solid #000">
+      {{item.author}}: {{item.title}}
+    </div>
+  </li>
+</ul>
