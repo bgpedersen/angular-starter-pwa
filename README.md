@@ -1,4 +1,4 @@
-# Angular Starter
+# Angular PWA Starter
 Angular 5 PWA (progressive web app) starter application wready to use with best practice structure and often used libraries.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
