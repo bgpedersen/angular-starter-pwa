@@ -1,7 +1,12 @@
 # Angular Starter
-Angular 5 starter application ready to use with best practice structure and often used libraries.
+Angular 5 PWA (progressive web app) starter application wready to use with best practice structure and often used libraries.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+
+## Server and API
+This project is built with Angular's Service-Worker:
+-Service-Workers only work in a production build, so to test, use 'ng build --prod'
+-The application uses the worker for caching of both files/assets and api data. Therefore 'json-server' can be used to setup an simple api on 'localhost:3000'.
 
 ## Structure
 * Core module setup for global models, services etc.
