@@ -23,7 +23,6 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
   }
 
-
   getPosts() {
     return this.http.get(this.postsAPI);
   }
