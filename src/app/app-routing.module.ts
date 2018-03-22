@@ -7,12 +7,8 @@ import { PostsComponent } from './posts/posts.component';
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'posts', component: PostsComponent, canActivate: [AuthGuard] },
-  {
-    path: '',
-    redirectTo: '/dashboard',
-    pathMatch: 'full'
-  },
-  { path: '**', component: DashboardComponent }
+  { path: '', component: PostsComponent, canActivate: [AuthGuard] },
+  { path: '**', component: PostsComponent }
 ];
 
 @NgModule({

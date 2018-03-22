@@ -9,12 +9,12 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class PostsComponent implements OnInit, OnDestroy {
 
-  postsAPI = 'http://127.0.0.1:3000/posts';
+  postsAPI = '/api/posts';
   posts = [];
 
   subs = {
     'posts': null
-  }
+  };
 
   constructor(private http: HttpClient) {
     this.subs.posts = this.getPosts()
