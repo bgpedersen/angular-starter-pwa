@@ -27,7 +27,11 @@
   "dataGroups": [{
     "name": "api-performance",
     "urls": [
+      "/",
+      "./",
       "posts",
+      "/posts",
+      "./posts",
       "https://jsonplaceholder.typicode.com/posts"
     ],
     "cacheConfig": {
