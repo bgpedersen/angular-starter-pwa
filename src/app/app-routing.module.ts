@@ -7,7 +7,11 @@ import { PostsComponent } from './posts/posts.component';
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'posts', component: PostsComponent, canActivate: [AuthGuard] },
-  { path: '', component: PostsComponent, canActivate: [AuthGuard] },
+  {
+    path: '',
+    redirectTo: '/',
+    pathMatch: 'full'
+  },
   { path: '**', component: PostsComponent }
 ];
 

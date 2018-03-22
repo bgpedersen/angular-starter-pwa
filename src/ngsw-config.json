@@ -1,17 +1,17 @@
 {
-  "index": "/index.html",
+  "index": "index.html",
   "assetGroups": [{
     "name": "app",
     "installMode": "prefetch",
     "resources": {
       "files": [
-        "/favicon.ico",
-        "/index.html"
+        "favicon.ico",
+        "index.html"
       ],
       "versionedFiles": [
-        "/*.bundle.css",
-        "/*.bundle.js",
-        "/*.chunk.js"
+        "*.bundle.css",
+        "*.bundle.js",
+        "*.chunk.js"
       ]
     }
   }, {
@@ -20,21 +20,20 @@
     "updateMode": "prefetch",
     "resources": {
       "files": [
-        "/assets/**"
+        "assets/**"
       ]
     }
   }],
   "dataGroups": [{
     "name": "api-performance",
     "urls": [
-      "/",
       "posts",
-      "/api/posts"
+      "https://jsonplaceholder.typicode.com/posts"
     ],
     "cacheConfig": {
-      "maxSize": 100,
-      "maxAge": "10s",
-      "timeout": "5s",
+      "maxSize": 200,
+      "maxAge": "15s",
+      "timeout": "10s",
       "strategy": "performance"
     }
   }]

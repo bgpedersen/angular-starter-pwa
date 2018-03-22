@@ -9,7 +9,12 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class PostsComponent implements OnInit, OnDestroy {
 
-  postsAPI = '/api/posts';
+  // postsAPI = '/api/posts';
+  postsAPI = 'https://jsonplaceholder.typicode.com/posts';
+
+  // fetch()
+  // .then(response => response.json())
+  // .then(json => console.log(json))
   posts = [];
 
   subs = {
