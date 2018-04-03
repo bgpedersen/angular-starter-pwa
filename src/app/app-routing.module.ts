@@ -12,7 +12,7 @@ const routes: Routes = [
     redirectTo: '/',
     pathMatch: 'full'
   },
-  { path: '**', component: PostsComponent }
+  { path: '**', component: DashboardComponent }
 ];
 
 @NgModule({
