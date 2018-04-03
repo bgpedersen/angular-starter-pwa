@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
@@ -28,8 +27,7 @@ import { environment } from '../environments/environment';
     HttpClientModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     CoreModule,
-    AppRoutingModule,
-    NgbModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
