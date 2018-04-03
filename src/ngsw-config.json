@@ -27,7 +27,6 @@
   "dataGroups": [{
     "name": "api-freshness",
     "urls": [
-      "/posts",
       "https://jsonplaceholder.typicode.com/posts"
     ],
     "cacheConfig": {
