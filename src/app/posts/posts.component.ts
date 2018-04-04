@@ -9,39 +9,15 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class PostsComponent implements OnInit, OnDestroy {
 
-  // postsAPI = '/api/posts';
-  postsAPI = 'https://jsonplaceholder.typicode.com/posts';
+  constructor() {
 
-  // fetch()
-  // .then(response => response.json())
-  // .then(json => console.log(json))
-  posts = [];
-
-  subs = {
-    'posts': null
-  };
-
-  constructor(private http: HttpClient) {
-    this.subs.posts = this.getPosts()
-      .subscribe((response: Array<any>) => {
-        console.log('getPosts: response: ', response);
-        this.posts = response;
-      });
   }
 
   ngOnInit() {
   }
 
   ngOnDestroy() {
-    for (const key in this.subs) {
-      if (this.subs.hasOwnProperty(key)) {
-        this.subs[key].unsubscribe();
-      }
-    }
-  }
 
-  getPosts() {
-    return this.http.get(this.postsAPI);
   }
 
 }

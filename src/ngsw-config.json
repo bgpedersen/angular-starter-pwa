@@ -23,17 +23,5 @@
         "/assets/**"
       ]
     }
-  }],
-  "dataGroups": [{
-    "name": "api-freshness",
-    "urls": [
-      "https://jsonplaceholder.typicode.com/posts"
-    ],
-    "cacheConfig": {
-      "maxSize": 100,
-      "maxAge": "1d",
-      "timeout": "10s",
-      "strategy": "freshness"
-    }
   }]
 }
