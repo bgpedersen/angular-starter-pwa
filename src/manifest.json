@@ -3,7 +3,7 @@
   "lang": "en",
   "name": "Angular Starter PWA",
   "scope": "/",
-  "display": "fullscreen",
+  "display": "browser",
   "start_url": "/",
   "short_name": "Angular Starter PWA",
   "theme_color": "#62a7e0",
