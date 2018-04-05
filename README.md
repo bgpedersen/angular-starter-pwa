@@ -1,9 +1,15 @@
 # Angular PWA Starter
 Angular 6 RC1 PWA (progressive web app) starter application ready to use with best practice structure and often used libraries.
 
-## Server and API
+## Important
+* This project uses Angular 6 RC1 because Angular 5 has a bug in Service Worker offline mode.
+
+## Service Worker
 This project is built with Angular's Service-Worker:
 * Service-Workers only work in a production build, so to test, use 'ng build --prod' and run it on a HTTPS server. Example on firebase.
+* Manifest created for app to be installable + icons
+* Using SwUpdate service to show promt when app is opened and new version is available on server
+* Static files are cached, meaning the app works in offline mode
 
 ## Structure
 * Core module setup for global models, services etc.
