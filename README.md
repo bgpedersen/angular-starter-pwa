@@ -1,8 +1,5 @@
 # Angular PWA Starter
-Angular 6 RC1 PWA (progressive web app) starter application ready to use with best practice structure and often used libraries.
-
-## Important
-* This project uses Angular 6 RC1 because Angular 5 has a bug in Service Worker offline mode.
+Angular 6 PWA (progressive web app) starter application ready to use. Test with incognito mode and press offline and refresh.
 
 ## Service Worker
 This project is built with Angular's Service-Worker:
@@ -32,4 +29,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
