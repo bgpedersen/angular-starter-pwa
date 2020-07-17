@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
         if (confirm('New version available. Load new Version?')) {
           window.location.reload();
         }
-      })
+      });
     }
 
   }
