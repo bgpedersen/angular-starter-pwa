@@ -1,5 +1,6 @@
 # Angular PWA Starter
-Angular 6 PWA (progressive web app) starter application ready to use. Test with incognito mode and press offline and refresh.
+Angular 9 PWA (progressive web app) starter application ready to use. Test with incognito mode and press offline and
+ refresh.
 
 ## Service Worker
 This project is built with Angular's Service-Worker:
@@ -15,7 +16,7 @@ This project is built with Angular's Service-Worker:
 * Using SCSS
 
 ## Ready to use with following libraries
-* Bootstrap v4
+* Bootstrap v4.5
 * Fontawesome 4.7
 * Moment.js
 * Lodash 4.17
