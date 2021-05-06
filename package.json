@@ -22,7 +22,7 @@
     "@angular/service-worker": "~9.1.12",
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "moment": "^2.27.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
